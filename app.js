@@ -30,7 +30,7 @@ app.post("/", (req, res) => {
   const url = `https://us9.api.mailchimp.com/3.0/lists/c1c6e05356`;
   const options = {
     method: "POST",
-    auth: "psr8:1a3b10dfebf82c7d7a31ed5ce2d0eefe-us9",
+    auth: "psr8:e7cca9a2d183512ff9e6708411734bfd-us9",
   };
   const request = https.request(url, options, function (response) {
     if (response.statusCode === 200) {
@@ -57,4 +57,5 @@ app.listen(process.env.PORT || 3000, () => {
 });
 
 //1a3b10dfebf82c7d7a31ed5ce2d0eefe-us9
+//e7cca9a2d183512ff9e6708411734bfd-us9
 // c1c6e05356
